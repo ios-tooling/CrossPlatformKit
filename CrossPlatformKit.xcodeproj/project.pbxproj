@@ -21,12 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		B52533EA1B8FF30A00126E11 /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52533E91B8FF30A00126E11 /* Plug.framework */; };
-		B52533EC1B8FF32300126E11 /* Plug.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B52533E91B8FF30A00126E11 /* Plug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B52533ED1B8FF33D00126E11 /* Plug.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B52533E91B8FF30A00126E11 /* Plug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B583A78A1CB4951C00AF73BA /* CrossPlatformKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B504E6461A8968DC001B414B /* CrossPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B583A78D1CB495BC00AF73BA /* Gulliver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B583A78B1CB495BC00AF73BA /* Gulliver.framework */; };
-		B583A78F1CB495BF00AF73BA /* Gulliver.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B583A78B1CB495BC00AF73BA /* Gulliver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B58D64791A898F89005A0002 /* CrossPlatformKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B58D64681A898F81005A0002 /* CrossPlatformKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B58D64901A899094005A0002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D64881A899094005A0002 /* AppDelegate.swift */; };
 		B58D64911A899094005A0002 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B58D64891A899094005A0002 /* LaunchScreen.xib */; };
@@ -34,7 +29,6 @@
 		B58D64931A899094005A0002 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58D648D1A899094005A0002 /* Images.xcassets */; };
 		B58D64951A899094005A0002 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D648F1A899094005A0002 /* ViewController.swift */; };
 		B58D64961A899285005A0002 /* CrossPlatformKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B58D646B1A898F81005A0002 /* CrossPlatformKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B59323351D91914B00A55E8F /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59323341D91914B00A55E8F /* Plug.framework */; };
 		B5A482511AE5DCCC001636BE /* CrossPlatformKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B504E6461A8968DC001B414B /* CrossPlatformKit.framework */; };
 		B5A482591AE5DE6A001636BE /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A482581AE5DE6A001636BE /* CoreAudio.framework */; };
 		B5C047761E7C2CBE00A2BE64 /* UXColor+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C047721E7C2CBE00A2BE64 /* UXColor+Mac.swift */; };
@@ -54,7 +48,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B52533EC1B8FF32300126E11 /* Plug.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,8 +58,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B52533ED1B8FF33D00126E11 /* Plug.framework in CopyFiles */,
-				B583A78F1CB495BF00AF73BA /* Gulliver.framework in CopyFiles */,
 				B583A78A1CB4951C00AF73BA /* CrossPlatformKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,8 +71,6 @@
 		B504E69B1A896E82001B414B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B504E69C1A896E82001B414B /* CrossPlatformKit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformKit_Tests.swift; sourceTree = "<group>"; };
 		B504E6AF1A898110001B414B /* CrossPlatformKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CrossPlatformKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B52533E91B8FF30A00126E11 /* Plug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plug.framework; sourceTree = "<group>"; };
-		B583A78B1CB495BC00AF73BA /* Gulliver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gulliver.framework; sourceTree = "<group>"; };
 		B58D64671A898F81005A0002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58D64681A898F81005A0002 /* CrossPlatformKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossPlatformKit.h; sourceTree = "<group>"; };
 		B58D646A1A898F81005A0002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +81,6 @@
 		B58D648D1A899094005A0002 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B58D648E1A899094005A0002 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58D648F1A899094005A0002 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B59323341D91914B00A55E8F /* Plug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plug.framework; sourceTree = "<group>"; };
 		B5A482581AE5DE6A001636BE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		B5C047721E7C2CBE00A2BE64 /* UXColor+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UXColor+Mac.swift"; path = "CrossPlatformKit/Mac/UXColor+Mac.swift"; sourceTree = "<group>"; };
 		B5C047731E7C2CBE00A2BE64 /* UXImage+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UXImage+Mac.swift"; path = "CrossPlatformKit/Mac/UXImage+Mac.swift"; sourceTree = "<group>"; };
@@ -109,10 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B583A78D1CB495BC00AF73BA /* Gulliver.framework in Frameworks */,
 				B5A482591AE5DE6A001636BE /* CoreAudio.framework in Frameworks */,
 				B5A482511AE5DCCC001636BE /* CrossPlatformKit.framework in Frameworks */,
-				B52533EA1B8FF30A00126E11 /* Plug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B59323351D91914B00A55E8F /* Plug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,20 +204,9 @@
 			path = TestHost;
 			sourceTree = "<group>";
 		};
-		B59323331D91914B00A55E8F /* MacFrameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B59323341D91914B00A55E8F /* Plug.framework */,
-			);
-			path = MacFrameworks;
-			sourceTree = "<group>";
-		};
 		B5A482401AE5838F001636BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B59323331D91914B00A55E8F /* MacFrameworks */,
-				B583A78B1CB495BC00AF73BA /* Gulliver.framework */,
-				B52533E91B8FF30A00126E11 /* Plug.framework */,
 				B5A482581AE5DE6A001636BE /* CoreAudio.framework */,
 			);
 			path = Frameworks;
