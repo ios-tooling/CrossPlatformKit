@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B504E6121A89230F001B414B"
-               BuildableName = "CrossPlatformKitTest.app"
-               BlueprintName = "CrossPlatformKitTest"
-               ReferencedContainer = "container:CrossPlatformKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B504E6971A896E82001B414B"
-               BuildableName = "Hoard Tests.xctest"
-               BlueprintName = "Hoard Tests"
+               BlueprintIdentifier = "B504E6451A8968DC001B414B"
+               BuildableName = "CrossPlatformKit.framework"
+               BlueprintName = "CrossPlatformKit_iOS"
                ReferencedContainer = "container:CrossPlatformKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B504E6971A896E82001B414B"
-               BuildableName = "Hoard Tests.xctest"
-               BlueprintName = "Hoard Tests"
-               ReferencedContainer = "container:CrossPlatformKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B504E6121A89230F001B414B"
-            BuildableName = "CrossPlatformKitTest.app"
-            BlueprintName = "CrossPlatformKitTest"
-            ReferencedContainer = "container:CrossPlatformKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -75,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B504E6121A89230F001B414B"
-            BuildableName = "CrossPlatformKitTest.app"
-            BlueprintName = "CrossPlatformKitTest"
+            BlueprintIdentifier = "B504E6451A8968DC001B414B"
+            BuildableName = "CrossPlatformKit.framework"
+            BlueprintName = "CrossPlatformKit_iOS"
             ReferencedContainer = "container:CrossPlatformKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B504E6121A89230F001B414B"
-            BuildableName = "CrossPlatformKitTest.app"
-            BlueprintName = "CrossPlatformKitTest"
+            BlueprintIdentifier = "B504E6451A8968DC001B414B"
+            BuildableName = "CrossPlatformKit.framework"
+            BlueprintName = "CrossPlatformKit_iOS"
             ReferencedContainer = "container:CrossPlatformKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
