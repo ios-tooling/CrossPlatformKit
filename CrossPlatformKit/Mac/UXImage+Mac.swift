@@ -9,3 +9,20 @@
 import Cocoa
 
 public typealias UXImage = NSImage
+
+extension NSImage {
+	func jpegData(withQuality quality: CGFloat = 0.9) -> Data? {
+		let cgImage = self.cgImage(forProposedRect: nil, context: nil, hints: nil)!
+		let bitmapRep = NSBitmapImageRep(cgImage: cgImage)
+		let jpegData = bitmapRep.representation(using: NSBitmapImageFileType.JPEG, properties: [NSImageCompressionFactor: quality])
+		return jpegData
+	}
+	
+	func pngData() -> Data? {
+		let cgImage = self.cgImage(forProposedRect: nil, context: nil, hints: nil)!
+		let bitmapRep = NSBitmapImageRep(cgImage: cgImage)
+		let pngData = bitmapRep.representation(using: NSBitmapImageFileType.PNG, properties: [:])
+		return pngData
+	}
+}
+

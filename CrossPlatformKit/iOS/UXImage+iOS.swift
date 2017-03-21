@@ -9,3 +9,13 @@
 import UIKit
 
 public typealias UXImage = UIImage
+
+extension UIImage {
+	func jpegData(withQuality quality: CGFloat = 0.9) -> Data? {
+		return UIImageJPEGRepresentation(self, quality)
+	}
+	
+	func pngData() -> Data? {
+		return UIImagePNGRepresentation(self)
+	}
+}
