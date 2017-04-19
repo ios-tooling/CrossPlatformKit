@@ -1,6 +1,6 @@
 //
-//  Hoard_Tests.swift
-//  Hoard Tests
+//  CrossPlatformKit_Tests.swift
+//  CrossPlatformKit Tests
 //
 //  Created by Ben Gottlieb on 2/9/15.
 //  Copyright (c) 2015 Stand Alone, inc. All rights reserved.
@@ -8,9 +8,9 @@
 
 import UIKit
 import XCTest
-import Hoard
+import CrossPlatformKit
 
-class Hoard_Tests: XCTestCase {
+class CrossPlatformKit_Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -1,13 +1,13 @@
 //
 //  AppDelegate.swift
-//  Hoard
+//  CrossPlatformKit
 //
 //  Created by Ben Gottlieb on 2/9/15.
 //  Copyright (c) 2015 Stand Alone, inc. All rights reserved.
 //
 
 import UIKit
-import Hoard
+import CrossPlatformKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
 		// Override point for customization after application launch
 		
-	//	HoardState.defaultImageCache.nuke()
-		HoardState.debugLevel = .high
+	//	CrossPlatformKitState.defaultImageCache.nuke()
+		CrossPlatformKitState.debugLevel = .high
 		return true
 	}
 

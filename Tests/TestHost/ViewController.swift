@@ -1,15 +1,15 @@
 //
 //  ViewController.swift
-//  Hoard
+//  CrossPlatformKit
 //
 //  Created by Ben Gottlieb on 2/9/15.
 //  Copyright (c) 2015 Stand Alone, inc. All rights reserved.
 //
 
 import UIKit
-import Hoard
+import CrossPlatformKit
 
-class ViewController: UIViewController, HoardImageSource, UICollectionViewDataSource, UICollectionViewDelegate {
+class ViewController: UIViewController, CrossPlatformKitImageSource, UICollectionViewDataSource, UICollectionViewDelegate {
 	func generateImage(for: URL) -> UIImage? {
 		return UIImage(named: "screen_shot")
 	}
@@ -20,7 +20,7 @@ class ViewController: UIViewController, HoardImageSource, UICollectionViewDataSo
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		HoardState.defaultImageCache.maxSize = 100000
+		CrossPlatformKitState.defaultImageCache.maxSize = 100000
 		self.view.backgroundColor = UIColor.green
 	
 	}
@@ -56,7 +56,7 @@ class ViewController: UIViewController, HoardImageSource, UICollectionViewDataSo
 				urls.append(URL(string: "http://lorempixel.com/\((arc4random() % 400 + 30))/\((arc4random() % 400 + 40))/")!)
 			}
 			
-			let cache = HoardState.defaultImageCache.diskCache
+			let cache = CrossPlatformKitState.defaultImageCache.diskCache
 			for url in urls {
 				_ = PendingImage.request(url, cache: cache)
 			}
@@ -125,7 +125,7 @@ class ViewController: UIViewController, HoardImageSource, UICollectionViewDataSo
 		let url = URL(string: "http://test.com/\(indexPath.row)")
 		
 		cell.setupImageView()
-		cell.hoardView?.URL = url
+		cell.CrossPlatformKitView?.URL = url
 		return cell
 	}
 	
@@ -133,14 +133,14 @@ class ViewController: UIViewController, HoardImageSource, UICollectionViewDataSo
 	}
 }
 
-class TestCeollectionViewCell: UICollectionViewCell, HoardImageSource {
-	var hoardView: ImageView!
+class TestCeollectionViewCell: UICollectionViewCell, CrossPlatformKitImageSource {
+	var CrossPlatformKitView: ImageView!
 	
 	func setupImageView() {
-		if self.hoardView == nil {
-			self.hoardView = ImageView(frame: self.contentView.bounds)
-			self.contentView.addSubview(self.hoardView)
-			self.hoardView.imageSource = self
+		if self.CrossPlatformKitView == nil {
+			self.CrossPlatformKitView = ImageView(frame: self.contentView.bounds)
+			self.contentView.addSubview(self.CrossPlatformKitView)
+			self.CrossPlatformKitView.imageSource = self
 		}
 	}
 	
@@ -150,7 +150,7 @@ class TestCeollectionViewCell: UICollectionViewCell, HoardImageSource {
 	override func layoutSubviews() {
 		super.layoutSubviews()
 		self.setupImageView()
-		self.hoardView.frame = self.contentView.bounds
+		self.CrossPlatformKitView.frame = self.contentView.bounds
 	}
 	
 	func generateImage(for url: URL) -> UIImage? {
