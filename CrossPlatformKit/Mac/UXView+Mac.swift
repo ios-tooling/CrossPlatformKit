@@ -9,3 +9,9 @@
 import Cocoa
 
 public typealias UXView = NSView
+
+extension NSView {
+	public func setNeedsDisplay() {
+		self.setNeedsDisplay(self.bounds)
+	}
+}

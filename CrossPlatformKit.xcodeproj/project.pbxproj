@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		B559A83F1EAFD35600D54CD8 /* CGContext+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559A83E1EAFD35600D54CD8 /* CGContext+Mac.swift */; };
+		B559A8411EAFD36800D54CD8 /* CGContext+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */; };
 		B583A78A1CB4951C00AF73BA /* CrossPlatformKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B504E6461A8968DC001B414B /* CrossPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B58D64791A898F89005A0002 /* CrossPlatformKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B58D64681A898F81005A0002 /* CrossPlatformKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B58D64901A899094005A0002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D64881A899094005A0002 /* AppDelegate.swift */; };
@@ -71,6 +73,8 @@
 		B504E69B1A896E82001B414B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B504E69C1A896E82001B414B /* CrossPlatformKit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformKit_Tests.swift; sourceTree = "<group>"; };
 		B504E6AF1A898110001B414B /* CrossPlatformKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CrossPlatformKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B559A83E1EAFD35600D54CD8 /* CGContext+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGContext+Mac.swift"; path = "CrossPlatformKit/Mac/CGContext+Mac.swift"; sourceTree = "<group>"; };
+		B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGContext+iOS.swift"; path = "CrossPlatformKit/iOS/CGContext+iOS.swift"; sourceTree = "<group>"; };
 		B58D64671A898F81005A0002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58D64681A898F81005A0002 /* CrossPlatformKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossPlatformKit.h; sourceTree = "<group>"; };
 		B58D646A1A898F81005A0002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 				B5C0477B1E7C2CF300A2BE64 /* UXImage+iOS.swift */,
 				B5C0477C1E7C2CF300A2BE64 /* UXRect+iOS.swift */,
 				B5C0477D1E7C2CF300A2BE64 /* UXView+iOS.swift */,
+				B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				B5C047731E7C2CBE00A2BE64 /* UXImage+Mac.swift */,
 				B5C047741E7C2CBE00A2BE64 /* UXRect+Mac.swift */,
 				B5C047751E7C2CBE00A2BE64 /* UXView+Mac.swift */,
+				B559A83E1EAFD35600D54CD8 /* CGContext+Mac.swift */,
 			);
 			name = Mac;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 				B5C047811E7C2CF300A2BE64 /* UXView+iOS.swift in Sources */,
 				B5C0477E1E7C2CF300A2BE64 /* UXColor+iOS.swift in Sources */,
 				B5C047801E7C2CF300A2BE64 /* UXRect+iOS.swift in Sources */,
+				B559A8411EAFD36800D54CD8 /* CGContext+iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +437,7 @@
 				B5C047791E7C2CBE00A2BE64 /* UXView+Mac.swift in Sources */,
 				B5C047761E7C2CBE00A2BE64 /* UXColor+Mac.swift in Sources */,
 				B5C047771E7C2CBE00A2BE64 /* UXImage+Mac.swift in Sources */,
+				B559A83F1EAFD35600D54CD8 /* CGContext+Mac.swift in Sources */,
 				B5C047781E7C2CBE00A2BE64 /* UXRect+Mac.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
