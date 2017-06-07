@@ -18,4 +18,21 @@ extension UIImage {
 	public func pngData() -> Data? {
 		return UIImagePNGRepresentation(self)
 	}
+	
+	static public func create(size: CGSize, drawing: @escaping (CGContext) -> Void) -> UXImage {
+		return UIGraphicsImageRenderer(size: size).image { renderer in
+			guard let ctx = UIGraphicsGetCurrentContext() else {
+				print("⚠️ UIGraphicsGetCurrentContext() Failed")
+				return
+			}
+			
+			drawing(ctx)
+		}
+	}
+	
+//	public func create(size: CGSize, bitsPerPixel: Int, colorspace: CGColorSpace? = nil, data: Data) -> UXImage? {
+//		return nil
+//	}
+
+	
 }

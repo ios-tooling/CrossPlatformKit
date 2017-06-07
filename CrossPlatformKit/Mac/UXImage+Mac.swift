@@ -24,5 +24,21 @@ extension NSImage {
 		let pngData = bitmapRep.representation(using: NSBitmapImageFileType.PNG, properties: [:])
 		return pngData
 	}
+	
+	static public func create(size: CGSize, drawing: (CGContext) -> Void) -> UXImage {
+		let image = NSImage(size: size)
+		image.lockFocus()
+		if let ctx = CGContext.current {
+			drawing(ctx)
+		} else {
+			print("⚠️ CGContext.current Failed")
+		}
+		image.unlockFocus()
+		return image
+	}
+	
+//	public func create(size: CGSize, bitsPerComponent: Int, bytesPerRow: Int, colorspace: CGColorSpace? = nil, data: UnsafeMutableRawPointer) -> UXImage? {
+//		return nil
+//	}
 }
 
