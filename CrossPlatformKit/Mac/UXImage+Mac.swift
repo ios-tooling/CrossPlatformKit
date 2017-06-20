@@ -25,7 +25,7 @@ extension NSImage {
 		return pngData
 	}
 	
-	static public func create(size: CGSize, drawing: (CGContext) -> Void) -> UXImage {
+	static public func create(size: CGSize, drawing: (CGContext) -> Void) -> UXImage? {
 		let image = NSImage(size: size)
 		image.lockFocus()
 		if let ctx = CGContext.current {

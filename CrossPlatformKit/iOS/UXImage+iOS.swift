@@ -19,14 +19,27 @@ extension UIImage {
 		return UIImagePNGRepresentation(self)
 	}
 	
-	static public func create(size: CGSize, drawing: @escaping (CGContext) -> Void) -> UXImage {
-		return UIGraphicsImageRenderer(size: size).image { renderer in
+	static public func create(size: CGSize, drawing: @escaping (CGContext) -> Void) -> UXImage? {
+		if #available(iOS 10, *) {
+			return UIGraphicsImageRenderer(size: size).image { renderer in
+				guard let ctx = UIGraphicsGetCurrentContext() else {
+					print("⚠️ UIGraphicsGetCurrentContext() Failed")
+					return
+				}
+				
+				drawing(ctx)
+			}
+		} else {
+			UIGraphicsBeginImageContextWithOptions(size, false, 0)
 			guard let ctx = UIGraphicsGetCurrentContext() else {
 				print("⚠️ UIGraphicsGetCurrentContext() Failed")
-				return
+				return nil
 			}
 			
 			drawing(ctx)
+			let image = UIGraphicsGetImageFromCurrentImageContext()
+			UIGraphicsEndImageContext()
+			return image
 		}
 	}
 	
