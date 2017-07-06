@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		B51657621F0E44E400E2D0E0 /* Bundle+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51657611F0E44E400E2D0E0 /* Bundle+iOS.swift */; };
+		B51657641F0E457100E2D0E0 /* Bundle+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51657631F0E457100E2D0E0 /* Bundle+Mac.swift */; };
 		B559A83F1EAFD35600D54CD8 /* CGContext+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559A83E1EAFD35600D54CD8 /* CGContext+Mac.swift */; };
 		B559A8411EAFD36800D54CD8 /* CGContext+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */; };
 		B559A8431EB02FE700D54CD8 /* UXFont+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559A8421EB02FE700D54CD8 /* UXFont+Mac.swift */; };
@@ -75,6 +77,8 @@
 		B504E69B1A896E82001B414B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B504E69C1A896E82001B414B /* CrossPlatformKit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformKit_Tests.swift; sourceTree = "<group>"; };
 		B504E6AF1A898110001B414B /* CrossPlatformKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CrossPlatformKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51657611F0E44E400E2D0E0 /* Bundle+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bundle+iOS.swift"; path = "CrossPlatformKit/iOS/Bundle+iOS.swift"; sourceTree = "<group>"; };
+		B51657631F0E457100E2D0E0 /* Bundle+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bundle+Mac.swift"; path = "CrossPlatformKit/Mac/Bundle+Mac.swift"; sourceTree = "<group>"; };
 		B559A83E1EAFD35600D54CD8 /* CGContext+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGContext+Mac.swift"; path = "CrossPlatformKit/Mac/CGContext+Mac.swift"; sourceTree = "<group>"; };
 		B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGContext+iOS.swift"; path = "CrossPlatformKit/iOS/CGContext+iOS.swift"; sourceTree = "<group>"; };
 		B559A8421EB02FE700D54CD8 /* UXFont+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UXFont+Mac.swift"; path = "CrossPlatformKit/Mac/UXFont+Mac.swift"; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 				B5C0477C1E7C2CF300A2BE64 /* UXRect+iOS.swift */,
 				B5C0477D1E7C2CF300A2BE64 /* UXView+iOS.swift */,
 				B559A8441EB0300600D54CD8 /* UXFont+iOS.swift */,
+				B51657611F0E44E400E2D0E0 /* Bundle+iOS.swift */,
 				B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */,
 			);
 			name = iOS;
@@ -242,6 +247,7 @@
 				B559A8421EB02FE700D54CD8 /* UXFont+Mac.swift */,
 				B5C047751E7C2CBE00A2BE64 /* UXView+Mac.swift */,
 				B559A83E1EAFD35600D54CD8 /* CGContext+Mac.swift */,
+				B51657631F0E457100E2D0E0 /* Bundle+Mac.swift */,
 			);
 			name = Mac;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 				B5C0477E1E7C2CF300A2BE64 /* UXColor+iOS.swift in Sources */,
 				B5C047801E7C2CF300A2BE64 /* UXRect+iOS.swift in Sources */,
 				B559A8411EAFD36800D54CD8 /* CGContext+iOS.swift in Sources */,
+				B51657621F0E44E400E2D0E0 /* Bundle+iOS.swift in Sources */,
 				B559A8451EB0300600D54CD8 /* UXFont+iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +452,7 @@
 				B559A8431EB02FE700D54CD8 /* UXFont+Mac.swift in Sources */,
 				B5C047761E7C2CBE00A2BE64 /* UXColor+Mac.swift in Sources */,
 				B5C047771E7C2CBE00A2BE64 /* UXImage+Mac.swift in Sources */,
+				B51657641F0E457100E2D0E0 /* Bundle+Mac.swift in Sources */,
 				B559A83F1EAFD35600D54CD8 /* CGContext+Mac.swift in Sources */,
 				B5C047781E7C2CBE00A2BE64 /* UXRect+Mac.swift in Sources */,
 			);
@@ -518,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -566,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
