@@ -10,6 +10,6 @@ import AppKit
 
 extension CGContext {
 	public static var current: CGContext? {
-		return NSGraphicsContext.current()?.cgContext
+		return NSGraphicsContext.current?.cgContext
 	}
 }

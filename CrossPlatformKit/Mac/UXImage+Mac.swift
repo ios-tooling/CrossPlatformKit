@@ -14,14 +14,14 @@ extension NSImage {
 	public func jpegData(withQuality quality: CGFloat = 0.9) -> Data? {
 		let cgImage = self.cgImage(forProposedRect: nil, context: nil, hints: nil)!
 		let bitmapRep = NSBitmapImageRep(cgImage: cgImage)
-		let jpegData = bitmapRep.representation(using: NSBitmapImageFileType.JPEG, properties: [NSImageCompressionFactor: quality])
+		let jpegData = bitmapRep.representation(using: NSBitmapImageRep.FileType.jpeg, properties: [NSBitmapImageRep.PropertyKey.compressionFactor: quality])
 		return jpegData
 	}
 	
 	public func pngData() -> Data? {
 		let cgImage = self.cgImage(forProposedRect: nil, context: nil, hints: nil)!
 		let bitmapRep = NSBitmapImageRep(cgImage: cgImage)
-		let pngData = bitmapRep.representation(using: NSBitmapImageFileType.PNG, properties: [:])
+		let pngData = bitmapRep.representation(using: NSBitmapImageRep.FileType.png, properties: [:])
 		return pngData
 	}
 	
