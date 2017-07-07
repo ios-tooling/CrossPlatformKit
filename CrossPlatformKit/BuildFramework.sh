@@ -13,8 +13,6 @@ MAC_SUFFIX=""
 CONFIG=$CONFIGURATION
 UNIVERSAL_OUTPUTFOLDER="Build/${CONFIG}-universal"
 PROJECT_NAME="CrossPlatformKit"
-IOS_FRAMEWORKS=/Users/ben/Documents/ManagedProjects/Frameworks/iOS_Builds
-MAC_FRAMEWORKS=/Users/ben/Documents/ManagedProjects/Frameworks/Mac_Builds
 
 GIT_BRANCH=`git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/"`
 GIT_REV=`git rev-parse --short HEAD`
@@ -67,6 +65,9 @@ rm -f "${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}${IOS_SUFFIX}.framework/_CodeS
 echo "lipo'ing files"
 lipo -create -output "${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}${IOS_SUFFIX}.framework/${FRAMEWORK_NAME}${IOS_SUFFIX}" "${BASE_BUILD_DIR}/${CONFIG}-iphonesimulator/${FRAMEWORK_NAME}${IOS_SUFFIX}.framework/${FRAMEWORK_NAME}${IOS_SUFFIX}" "${BASE_BUILD_DIR}/${CONFIG}-iphoneos/${FRAMEWORK_NAME}${IOS_SUFFIX}.framework/${FRAMEWORK_NAME}${IOS_SUFFIX}"
 
+
+
+
 echo "copying to iOS Framework folder"
 # Step 5. Convenience step to copy the framework to the project's directory
 mkdir -p "${PROJECT_DIR}/iOS Framework/"
@@ -79,29 +80,31 @@ mkdir -p "${PROJECT_DIR}/Mac Framework/"
 	rm -rf "${PROJECT_DIR}/Mac Framework/${FRAMEWORK_NAME}.framework"
 cp -R "${BASE_BUILD_DIR}/${CONFIG}/${FRAMEWORK_NAME}.framework" "${PROJECT_DIR}/Mac Framework"
 
-# Step 7. Copy the iOS framework to the /iOS_Builds folder
-if [ ! -d "${IOS_FRAMEWORKS}" ]; then
-	mkdir "${IOS_FRAMEWORKS}"
-fi
+	# Step 7. Copy the iOS framework to the /iOS_Builds folder
+	if [ ! -d "${IOS_FRAMEWORKS}" ]; then
+		mkdir "${IOS_FRAMEWORKS}"
+	fi
 
-if [ -d "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework" ]; then
-	rm -rf "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
-fi
+	if [ -d "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework" ]; then
+		rm -rf "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
+	fi
 
-echo 'Copying: ${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework  ${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework'
-cp -R "${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework" "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
+	echo 'Copying: ${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework  ${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework'
+	cp -R "${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework" "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
 
 
-# Step 8. Copy the Mac framework to the /Mac_Builds folder
-if [ ! -d "${MAC_FRAMEWORKS}" ]; then
-	mkdir "${MAC_FRAMEWORKS}"
-fi
+	# Step 8. Copy the Mac framework to the /Mac_Builds folder
+	if [ ! -d "${MAC_FRAMEWORKS}" ]; then
+		mkdir "${MAC_FRAMEWORKS}"
+	fi
 
-if [ -d "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework" ]; then
-	rm -rf "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
-fi
+	if [ -d "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework" ]; then
+		rm -rf "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
+	fi
 
-cp -R "${BASE_BUILD_DIR}/${CONFIG}/${FRAMEWORK_NAME}.framework" "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
+	cp -R "${BASE_BUILD_DIR}/${CONFIG}/${FRAMEWORK_NAME}.framework" "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
+
+
 
 
 $(/usr/libexec/PlistBuddy "${MAC_PLIST_PATH}" -c "Delete :branch" 2> /dev/null)
