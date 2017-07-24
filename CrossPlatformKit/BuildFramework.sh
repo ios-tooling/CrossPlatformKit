@@ -6,7 +6,7 @@
 #  Created by Ben Gottlieb on 3/17/17.
 #  Copyright (c) 2015 Stand Alone, Inc. All rights reserved.
 
-BASE_BUILD_DIR="${BUILD_DIR}/Products"
+BASE_BUILD_DIR="${BUILD_DIR}"
 FRAMEWORK_NAME="CrossPlatformKit"
 IOS_SUFFIX=""
 MAC_SUFFIX=""
@@ -77,32 +77,8 @@ cp -R "${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}${IOS_SUFFIX}.framework" "${PR
 # Step 6. Copy the Mac framework
 echo "copying to Mac OS Framework folder"
 mkdir -p "${PROJECT_DIR}/Mac Framework/"
-	rm -rf "${PROJECT_DIR}/Mac Framework/${FRAMEWORK_NAME}.framework"
+rm -rf "${PROJECT_DIR}/Mac Framework/${FRAMEWORK_NAME}.framework"
 cp -R "${BASE_BUILD_DIR}/${CONFIG}/${FRAMEWORK_NAME}.framework" "${PROJECT_DIR}/Mac Framework"
-
-	# Step 7. Copy the iOS framework to the /iOS_Builds folder
-	if [ ! -d "${IOS_FRAMEWORKS}" ]; then
-		mkdir "${IOS_FRAMEWORKS}"
-	fi
-
-	if [ -d "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework" ]; then
-		rm -rf "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
-	fi
-
-	echo 'Copying: ${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework  ${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework'
-	cp -R "${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework" "${IOS_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
-
-
-	# Step 8. Copy the Mac framework to the /Mac_Builds folder
-	if [ ! -d "${MAC_FRAMEWORKS}" ]; then
-		mkdir "${MAC_FRAMEWORKS}"
-	fi
-
-	if [ -d "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework" ]; then
-		rm -rf "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
-	fi
-
-	cp -R "${BASE_BUILD_DIR}/${CONFIG}/${FRAMEWORK_NAME}.framework" "${MAC_FRAMEWORKS}/${FRAMEWORK_NAME}.framework"
 
 
 
