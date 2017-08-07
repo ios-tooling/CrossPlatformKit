@@ -11,6 +11,11 @@ import Cocoa
 public typealias UXImage = NSImage
 
 extension NSImage {
+	public convenience init(cgImage: CGImage) {
+		let size = CGSize(width: cgImage.width, height: cgImage.height)
+		self.init(cgImage: cgImage, size: size)
+	}
+	
 	public func jpegData(withQuality quality: CGFloat = 0.9) -> Data? {
 		let cgImage = self.cgImage(forProposedRect: nil, context: nil, hints: nil)!
 		let bitmapRep = NSBitmapImageRep(cgImage: cgImage)
