@@ -9,3 +9,9 @@
 import UIKit
 
 public typealias UXRect = CGRect
+
+extension CGRect {
+	public func fill() {
+		UIRectFill(self)
+	}
+}
