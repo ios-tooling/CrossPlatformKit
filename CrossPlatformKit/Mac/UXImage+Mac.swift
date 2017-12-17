@@ -41,10 +41,6 @@ extension NSImage {
 		image.unlockFocus()
 		return image
 	}
-	
-	public convenience init(cgImage: CGImage) {
-		self.init(cgImage: cgImage, size: NSSize.zero)
-	}
 
 //	public func create(size: CGSize, bitsPerComponent: Int, bytesPerRow: Int, colorspace: CGColorSpace? = nil, data: UnsafeMutableRawPointer) -> UXImage? {
 //		return nil
