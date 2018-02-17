@@ -27,6 +27,8 @@
 		B559A8411EAFD36800D54CD8 /* CGContext+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */; };
 		B559A8431EB02FE700D54CD8 /* UXFont+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559A8421EB02FE700D54CD8 /* UXFont+Mac.swift */; };
 		B559A8451EB0300600D54CD8 /* UXFont+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559A8441EB0300600D54CD8 /* UXFont+iOS.swift */; };
+		B5781DBF1FF3D9E50050D02D /* UXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5781DBE1FF3D9E50050D02D /* UXViewController.swift */; };
+		B5781DC11FF3DA050050D02D /* UXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5781DC01FF3DA050050D02D /* UXViewController.swift */; };
 		B583A78A1CB4951C00AF73BA /* CrossPlatformKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B504E6461A8968DC001B414B /* CrossPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B58D64791A898F89005A0002 /* CrossPlatformKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B58D64681A898F81005A0002 /* CrossPlatformKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B58D64901A899094005A0002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D64881A899094005A0002 /* AppDelegate.swift */; };
@@ -48,16 +50,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B52533EB1B8FF31900126E11 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B5A482541AE5DE2F001636BE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,6 +75,8 @@
 		B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGContext+iOS.swift"; path = "CrossPlatformKit/iOS/CGContext+iOS.swift"; sourceTree = "<group>"; };
 		B559A8421EB02FE700D54CD8 /* UXFont+Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UXFont+Mac.swift"; path = "CrossPlatformKit/Mac/UXFont+Mac.swift"; sourceTree = "<group>"; };
 		B559A8441EB0300600D54CD8 /* UXFont+iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UXFont+iOS.swift"; path = "CrossPlatformKit/iOS/UXFont+iOS.swift"; sourceTree = "<group>"; };
+		B5781DBE1FF3D9E50050D02D /* UXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UXViewController.swift; path = CrossPlatformKit/iOS/UXViewController.swift; sourceTree = "<group>"; };
+		B5781DC01FF3DA050050D02D /* UXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UXViewController.swift; path = CrossPlatformKit/Mac/UXViewController.swift; sourceTree = "<group>"; };
 		B58D64671A898F81005A0002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58D64681A898F81005A0002 /* CrossPlatformKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossPlatformKit.h; sourceTree = "<group>"; };
 		B58D646A1A898F81005A0002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,7 +131,6 @@
 				B5C047821E7C2D9E00A2BE64 /* iOS */,
 				B504E66A1A896980001B414B /* BuildFramework.sh */,
 				B5C047831E7C2DA500A2BE64 /* Mac */,
-				B58D64741A898F81005A0002 /* Framework Code */,
 				B58D64661A898F81005A0002 /* CrossPlatformKit_Mac */,
 				B58D64691A898F81005A0002 /* CrossPlatformKit_iOS */,
 				B504E6991A896E82001B414B /* CrossPlatformKit Tests */,
@@ -195,14 +188,6 @@
 			path = CrossPlatformKit/iOS;
 			sourceTree = "<group>";
 		};
-		B58D64741A898F81005A0002 /* Framework Code */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Framework Code";
-			path = "CrossPlatformKit/Framework Code";
-			sourceTree = "<group>";
-		};
 		B58D64871A899094005A0002 /* TestHost */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +219,7 @@
 				B559A8441EB0300600D54CD8 /* UXFont+iOS.swift */,
 				B51657611F0E44E400E2D0E0 /* Bundle+iOS.swift */,
 				B559A8401EAFD36800D54CD8 /* CGContext+iOS.swift */,
+				B5781DBE1FF3D9E50050D02D /* UXViewController.swift */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -248,6 +234,7 @@
 				B5C047751E7C2CBE00A2BE64 /* UXView+Mac.swift */,
 				B559A83E1EAFD35600D54CD8 /* CGContext+Mac.swift */,
 				B51657631F0E457100E2D0E0 /* Bundle+Mac.swift */,
+				B5781DC01FF3DA050050D02D /* UXViewController.swift */,
 			);
 			name = Mac;
 			sourceTree = "<group>";
@@ -300,7 +287,6 @@
 				B504E6421A8968DC001B414B /* Frameworks */,
 				B504E6431A8968DC001B414B /* Headers */,
 				B504E6441A8968DC001B414B /* Resources */,
-				B52533EB1B8FF31900126E11 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -441,6 +427,7 @@
 				B5C0477E1E7C2CF300A2BE64 /* UXColor+iOS.swift in Sources */,
 				B5C047801E7C2CF300A2BE64 /* UXRect+iOS.swift in Sources */,
 				B559A8411EAFD36800D54CD8 /* CGContext+iOS.swift in Sources */,
+				B5781DBF1FF3D9E50050D02D /* UXViewController.swift in Sources */,
 				B51657621F0E44E400E2D0E0 /* Bundle+iOS.swift in Sources */,
 				B559A8451EB0300600D54CD8 /* UXFont+iOS.swift in Sources */,
 			);
@@ -455,6 +442,7 @@
 				B5C047761E7C2CBE00A2BE64 /* UXColor+Mac.swift in Sources */,
 				B5C047771E7C2CBE00A2BE64 /* UXImage+Mac.swift in Sources */,
 				B51657641F0E457100E2D0E0 /* Bundle+Mac.swift in Sources */,
+				B5781DC11FF3DA050050D02D /* UXViewController.swift in Sources */,
 				B559A83F1EAFD35600D54CD8 /* CGContext+Mac.swift in Sources */,
 				B5C047781E7C2CBE00A2BE64 /* UXRect+Mac.swift in Sources */,
 			);
