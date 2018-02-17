@@ -9,3 +9,9 @@
 import Cocoa
 
 public typealias UXColor = NSColor
+
+extension NSColor {
+	public convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+		self.init(calibratedRed: red, green: green, blue: blue, alpha: alpha)
+	}
+}
