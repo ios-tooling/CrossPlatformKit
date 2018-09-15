@@ -11,14 +11,6 @@ import UIKit
 public typealias UXImage = UIImage
 
 extension UIImage {
-	public func jpegData(withQuality quality: CGFloat = 0.9) -> Data? {
-		return UIImageJPEGRepresentation(self, quality)
-	}
-	
-	public func pngData() -> Data? {
-		return UIImagePNGRepresentation(self)
-	}
-	
 	static public func create(size: CGSize, drawing: @escaping (CGContext) -> Void) -> UXImage? {
 		if #available(iOS 10, *) {
 			return UIGraphicsImageRenderer(size: size).image { renderer in
