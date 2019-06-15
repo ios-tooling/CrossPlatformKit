@@ -21,22 +21,21 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		B568E0F422B48E780006F03A /* UXFont+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E322B48E6D0006F03A /* UXFont+iOS.swift */; };
-		B568E0F522B48E780006F03A /* UXRect+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E422B48E6D0006F03A /* UXRect+iOS.swift */; };
-		B568E0F622B48E780006F03A /* UXColor+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E522B48E6D0006F03A /* UXColor+iOS.swift */; };
-		B568E0F722B48E780006F03A /* Bundle+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E622B48E6D0006F03A /* Bundle+iOS.swift */; };
-		B568E0F822B48E780006F03A /* UXImage+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E722B48E6D0006F03A /* UXImage+iOS.swift */; };
-		B568E0F922B48E780006F03A /* CGContext+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E822B48E6D0006F03A /* CGContext+iOS.swift */; };
-		B568E0FA22B48E780006F03A /* UXViewController+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E922B48E6D0006F03A /* UXViewController+iOS.swift */; };
-		B568E0FB22B48E780006F03A /* UXView+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0EA22B48E6D0006F03A /* UXView+iOS.swift */; };
-		B568E0FC22B48E7E0006F03A /* Bundle+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0EC22B48E6D0006F03A /* Bundle+Mac.swift */; };
-		B568E0FD22B48E7E0006F03A /* UXColor+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0ED22B48E6D0006F03A /* UXColor+Mac.swift */; };
-		B568E0FE22B48E7E0006F03A /* UXRect+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0EE22B48E6D0006F03A /* UXRect+Mac.swift */; };
-		B568E0FF22B48E7E0006F03A /* UXFont+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0EF22B48E6D0006F03A /* UXFont+Mac.swift */; };
-		B568E10022B48E7E0006F03A /* UXView+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F022B48E6D0006F03A /* UXView+Mac.swift */; };
-		B568E10122B48E7E0006F03A /* UXViewController.swift+Mac in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F122B48E6D0006F03A /* UXViewController.swift+Mac */; };
-		B568E10222B48E7E0006F03A /* CGContext+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F222B48E6D0006F03A /* CGContext+Mac.swift */; };
-		B568E10322B48E7E0006F03A /* UXImage+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F322B48E6D0006F03A /* UXImage+Mac.swift */; };
+		B51A83A422B49C4F003D8340 /* UXFont+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839422B49C40003D8340 /* UXFont+iOS.swift */; };
+		B51A83A522B49C4F003D8340 /* UXRect+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839522B49C40003D8340 /* UXRect+iOS.swift */; };
+		B51A83A622B49C4F003D8340 /* UXColor+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839622B49C40003D8340 /* UXColor+iOS.swift */; };
+		B51A83A722B49C4F003D8340 /* Bundle+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839922B49C40003D8340 /* Bundle+iOS.swift */; };
+		B51A83A822B49C4F003D8340 /* UXImage+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839C22B49C40003D8340 /* UXImage+iOS.swift */; };
+		B51A83A922B49C4F003D8340 /* CGContext+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839D22B49C40003D8340 /* CGContext+iOS.swift */; };
+		B51A83AA22B49C4F003D8340 /* UXView+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A83A022B49C40003D8340 /* UXView+iOS.swift */; };
+		B51A83AB22B49C4F003D8340 /* UXViewController+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A83A122B49C40003D8340 /* UXViewController+iOS.swift */; };
+		B51A83AC22B49C5B003D8340 /* Bundle+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839722B49C40003D8340 /* Bundle+Mac.swift */; };
+		B51A83AD22B49C5B003D8340 /* UXColor+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839822B49C40003D8340 /* UXColor+Mac.swift */; };
+		B51A83AE22B49C5B003D8340 /* UXRect+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839A22B49C40003D8340 /* UXRect+Mac.swift */; };
+		B51A83AF22B49C5B003D8340 /* UXFont+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839B22B49C40003D8340 /* UXFont+Mac.swift */; };
+		B51A83B022B49C5B003D8340 /* UXViewController+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A839F22B49C40003D8340 /* UXViewController+Mac.swift */; };
+		B51A83B122B49C5B003D8340 /* CGContext+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A83A222B49C40003D8340 /* CGContext+Mac.swift */; };
+		B51A83B222B49C5B003D8340 /* UXImage+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A83A322B49C40003D8340 /* UXImage+Mac.swift */; };
 		B583A78A1CB4951C00AF73BA /* CrossPlatformKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B504E6461A8968DC001B414B /* CrossPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B58D64791A898F89005A0002 /* CrossPlatformKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B58D64681A898F81005A0002 /* CrossPlatformKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B58D64901A899094005A0002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D64881A899094005A0002 /* AppDelegate.swift */; };
@@ -69,22 +68,22 @@
 		B504E69B1A896E82001B414B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B504E69C1A896E82001B414B /* CrossPlatformKit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformKit_Tests.swift; sourceTree = "<group>"; };
 		B504E6AF1A898110001B414B /* CrossPlatformKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CrossPlatformKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B568E0E322B48E6D0006F03A /* UXFont+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXFont+iOS.swift"; sourceTree = "<group>"; };
-		B568E0E422B48E6D0006F03A /* UXRect+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXRect+iOS.swift"; sourceTree = "<group>"; };
-		B568E0E522B48E6D0006F03A /* UXColor+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXColor+iOS.swift"; sourceTree = "<group>"; };
-		B568E0E622B48E6D0006F03A /* Bundle+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+iOS.swift"; sourceTree = "<group>"; };
-		B568E0E722B48E6D0006F03A /* UXImage+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXImage+iOS.swift"; sourceTree = "<group>"; };
-		B568E0E822B48E6D0006F03A /* CGContext+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+iOS.swift"; sourceTree = "<group>"; };
-		B568E0E922B48E6D0006F03A /* UXViewController+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXViewController+iOS.swift"; sourceTree = "<group>"; };
-		B568E0EA22B48E6D0006F03A /* UXView+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXView+iOS.swift"; sourceTree = "<group>"; };
-		B568E0EC22B48E6D0006F03A /* Bundle+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Mac.swift"; sourceTree = "<group>"; };
-		B568E0ED22B48E6D0006F03A /* UXColor+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXColor+Mac.swift"; sourceTree = "<group>"; };
-		B568E0EE22B48E6D0006F03A /* UXRect+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXRect+Mac.swift"; sourceTree = "<group>"; };
-		B568E0EF22B48E6D0006F03A /* UXFont+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXFont+Mac.swift"; sourceTree = "<group>"; };
-		B568E0F022B48E6D0006F03A /* UXView+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXView+Mac.swift"; sourceTree = "<group>"; };
-		B568E0F122B48E6D0006F03A /* UXViewController.swift+Mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = "UXViewController.swift+Mac"; sourceTree = "<group>"; };
-		B568E0F222B48E6D0006F03A /* CGContext+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+Mac.swift"; sourceTree = "<group>"; };
-		B568E0F322B48E6D0006F03A /* UXImage+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXImage+Mac.swift"; sourceTree = "<group>"; };
+		B51A839422B49C40003D8340 /* UXFont+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXFont+iOS.swift"; sourceTree = "<group>"; };
+		B51A839522B49C40003D8340 /* UXRect+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXRect+iOS.swift"; sourceTree = "<group>"; };
+		B51A839622B49C40003D8340 /* UXColor+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXColor+iOS.swift"; sourceTree = "<group>"; };
+		B51A839722B49C40003D8340 /* Bundle+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Mac.swift"; sourceTree = "<group>"; };
+		B51A839822B49C40003D8340 /* UXColor+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXColor+Mac.swift"; sourceTree = "<group>"; };
+		B51A839922B49C40003D8340 /* Bundle+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+iOS.swift"; sourceTree = "<group>"; };
+		B51A839A22B49C40003D8340 /* UXRect+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXRect+Mac.swift"; sourceTree = "<group>"; };
+		B51A839B22B49C40003D8340 /* UXFont+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXFont+Mac.swift"; sourceTree = "<group>"; };
+		B51A839C22B49C40003D8340 /* UXImage+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXImage+iOS.swift"; sourceTree = "<group>"; };
+		B51A839D22B49C40003D8340 /* CGContext+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+iOS.swift"; sourceTree = "<group>"; };
+		B51A839E22B49C40003D8340 /* UXView+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXView+Mac.swift"; sourceTree = "<group>"; };
+		B51A839F22B49C40003D8340 /* UXViewController+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXViewController+Mac.swift"; sourceTree = "<group>"; };
+		B51A83A022B49C40003D8340 /* UXView+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXView+iOS.swift"; sourceTree = "<group>"; };
+		B51A83A122B49C40003D8340 /* UXViewController+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXViewController+iOS.swift"; sourceTree = "<group>"; };
+		B51A83A222B49C40003D8340 /* CGContext+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+Mac.swift"; sourceTree = "<group>"; };
+		B51A83A322B49C40003D8340 /* UXImage+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXImage+Mac.swift"; sourceTree = "<group>"; };
 		B568E10422B48E890006F03A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		B58D64671A898F81005A0002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58D64681A898F81005A0002 /* CrossPlatformKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossPlatformKit.h; sourceTree = "<group>"; };
@@ -130,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				B568E10422B48E890006F03A /* Package.swift */,
-				B568E0E122B48E6D0006F03A /* Source */,
 				B504E66A1A896980001B414B /* BuildFramework.sh */,
+				B51A839222B49C40003D8340 /* Source */,
 				B58D64661A898F81005A0002 /* CrossPlatformKit_Mac */,
 				B58D64691A898F81005A0002 /* CrossPlatformKit_iOS */,
 				B504E6991A896E82001B414B /* CrossPlatformKit Tests */,
@@ -169,43 +168,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B568E0E122B48E6D0006F03A /* Source */ = {
+		B51A839222B49C40003D8340 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B568E0E222B48E6D0006F03A /* iOS */,
-				B568E0EB22B48E6D0006F03A /* Mac */,
+				B51A839322B49C40003D8340 /* CrossPlatformKit */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		B568E0E222B48E6D0006F03A /* iOS */ = {
+		B51A839322B49C40003D8340 /* CrossPlatformKit */ = {
 			isa = PBXGroup;
 			children = (
-				B568E0E322B48E6D0006F03A /* UXFont+iOS.swift */,
-				B568E0E422B48E6D0006F03A /* UXRect+iOS.swift */,
-				B568E0E522B48E6D0006F03A /* UXColor+iOS.swift */,
-				B568E0E622B48E6D0006F03A /* Bundle+iOS.swift */,
-				B568E0E722B48E6D0006F03A /* UXImage+iOS.swift */,
-				B568E0E822B48E6D0006F03A /* CGContext+iOS.swift */,
-				B568E0E922B48E6D0006F03A /* UXViewController+iOS.swift */,
-				B568E0EA22B48E6D0006F03A /* UXView+iOS.swift */,
+				B51A839422B49C40003D8340 /* UXFont+iOS.swift */,
+				B51A839522B49C40003D8340 /* UXRect+iOS.swift */,
+				B51A839622B49C40003D8340 /* UXColor+iOS.swift */,
+				B51A839722B49C40003D8340 /* Bundle+Mac.swift */,
+				B51A839822B49C40003D8340 /* UXColor+Mac.swift */,
+				B51A839922B49C40003D8340 /* Bundle+iOS.swift */,
+				B51A839A22B49C40003D8340 /* UXRect+Mac.swift */,
+				B51A839B22B49C40003D8340 /* UXFont+Mac.swift */,
+				B51A839C22B49C40003D8340 /* UXImage+iOS.swift */,
+				B51A839D22B49C40003D8340 /* CGContext+iOS.swift */,
+				B51A839E22B49C40003D8340 /* UXView+Mac.swift */,
+				B51A839F22B49C40003D8340 /* UXViewController+Mac.swift */,
+				B51A83A022B49C40003D8340 /* UXView+iOS.swift */,
+				B51A83A122B49C40003D8340 /* UXViewController+iOS.swift */,
+				B51A83A222B49C40003D8340 /* CGContext+Mac.swift */,
+				B51A83A322B49C40003D8340 /* UXImage+Mac.swift */,
 			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		B568E0EB22B48E6D0006F03A /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				B568E0EC22B48E6D0006F03A /* Bundle+Mac.swift */,
-				B568E0ED22B48E6D0006F03A /* UXColor+Mac.swift */,
-				B568E0EE22B48E6D0006F03A /* UXRect+Mac.swift */,
-				B568E0EF22B48E6D0006F03A /* UXFont+Mac.swift */,
-				B568E0F022B48E6D0006F03A /* UXView+Mac.swift */,
-				B568E0F122B48E6D0006F03A /* UXViewController.swift+Mac */,
-				B568E0F222B48E6D0006F03A /* CGContext+Mac.swift */,
-				B568E0F322B48E6D0006F03A /* UXImage+Mac.swift */,
-			);
-			path = Mac;
+			path = CrossPlatformKit;
 			sourceTree = "<group>";
 		};
 		B58D64661A898F81005A0002 /* CrossPlatformKit_Mac */ = {
@@ -434,14 +425,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B568E0FA22B48E780006F03A /* UXViewController+iOS.swift in Sources */,
-				B568E0FB22B48E780006F03A /* UXView+iOS.swift in Sources */,
-				B568E0F822B48E780006F03A /* UXImage+iOS.swift in Sources */,
-				B568E0F622B48E780006F03A /* UXColor+iOS.swift in Sources */,
-				B568E0F522B48E780006F03A /* UXRect+iOS.swift in Sources */,
-				B568E0F422B48E780006F03A /* UXFont+iOS.swift in Sources */,
-				B568E0F722B48E780006F03A /* Bundle+iOS.swift in Sources */,
-				B568E0F922B48E780006F03A /* CGContext+iOS.swift in Sources */,
+				B51A83A822B49C4F003D8340 /* UXImage+iOS.swift in Sources */,
+				B51A83A622B49C4F003D8340 /* UXColor+iOS.swift in Sources */,
+				B51A83A522B49C4F003D8340 /* UXRect+iOS.swift in Sources */,
+				B51A83A422B49C4F003D8340 /* UXFont+iOS.swift in Sources */,
+				B51A83AA22B49C4F003D8340 /* UXView+iOS.swift in Sources */,
+				B51A83A722B49C4F003D8340 /* Bundle+iOS.swift in Sources */,
+				B51A83A922B49C4F003D8340 /* CGContext+iOS.swift in Sources */,
+				B51A83AB22B49C4F003D8340 /* UXViewController+iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,14 +440,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B568E10322B48E7E0006F03A /* UXImage+Mac.swift in Sources */,
-				B568E10022B48E7E0006F03A /* UXView+Mac.swift in Sources */,
-				B568E0FD22B48E7E0006F03A /* UXColor+Mac.swift in Sources */,
-				B568E0FE22B48E7E0006F03A /* UXRect+Mac.swift in Sources */,
-				B568E0FC22B48E7E0006F03A /* Bundle+Mac.swift in Sources */,
-				B568E10222B48E7E0006F03A /* CGContext+Mac.swift in Sources */,
-				B568E0FF22B48E7E0006F03A /* UXFont+Mac.swift in Sources */,
-				B568E10122B48E7E0006F03A /* UXViewController.swift+Mac in Sources */,
+				B51A83AD22B49C5B003D8340 /* UXColor+Mac.swift in Sources */,
+				B51A83B122B49C5B003D8340 /* CGContext+Mac.swift in Sources */,
+				B51A83AE22B49C5B003D8340 /* UXRect+Mac.swift in Sources */,
+				B51A83B022B49C5B003D8340 /* UXViewController+Mac.swift in Sources */,
+				B51A83AC22B49C5B003D8340 /* Bundle+Mac.swift in Sources */,
+				B51A83B222B49C5B003D8340 /* UXImage+Mac.swift in Sources */,
+				B51A83AF22B49C5B003D8340 /* UXFont+Mac.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
