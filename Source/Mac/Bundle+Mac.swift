@@ -8,8 +8,12 @@
 
 import Foundation
 
+#if canImport(AppKit)
+import AppKit
+
 extension Bundle {
 	public func image(named name: String) -> NSImage? {
 		return self.image(forResource: NSImage.Name(name))
 	}
 }
+#endif

@@ -8,6 +8,8 @@
 
 import Cocoa
 
+#if canImport(AppKit)
+import AppKit
 public typealias UXColor = NSColor
 
 extension NSColor {
@@ -15,3 +17,4 @@ extension NSColor {
 		self.init(calibratedRed: red, green: green, blue: blue, alpha: alpha)
 	}
 }
+#endif

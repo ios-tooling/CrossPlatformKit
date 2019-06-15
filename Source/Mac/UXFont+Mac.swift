@@ -7,6 +7,9 @@
 //
 
 import Foundation
+
+#if canImport(AppKit)
 import AppKit
 
 public typealias UXFont = NSFont
+#endif

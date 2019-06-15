@@ -6,7 +6,7 @@
 //  Copyright © 2017 Stand Alone, inc. All rights reserved.
 //
 
-import Foundation
+#if canImport(UIKit)
 import UIKit
 
 extension CGContext {
@@ -14,3 +14,4 @@ extension CGContext {
 		return UIGraphicsGetCurrentContext()
 	}
 }
+#endif

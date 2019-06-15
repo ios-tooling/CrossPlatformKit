@@ -8,6 +8,7 @@
 
 import Foundation
 
+#if canImport(UIKit)
 import UIKit
 
 extension Bundle {
@@ -16,3 +17,4 @@ extension Bundle {
 	}
 }
 
+#endif

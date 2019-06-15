@@ -8,6 +8,9 @@
 
 import Cocoa
 
+#if canImport(AppKit)
+import AppKit
+
 public typealias UXView = NSView
 
 extension NSView {
@@ -15,3 +18,5 @@ extension NSView {
 		self.setNeedsDisplay(self.bounds)
 	}
 }
+
+#endif

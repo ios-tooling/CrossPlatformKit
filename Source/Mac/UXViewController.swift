@@ -1,11 +1,16 @@
 //
 //  UXViewController.swift
-//  CrossPlatformKit_iOS
+//  CrossPlatformKit_Mac
 //
 //  Created by Ben Gottlieb on 12/27/17.
 //  Copyright © 2017 Stand Alone, inc. All rights reserved.
 //
 
-import UIKit
+import Cocoa
 
-public typealias UXViewController = UIViewController
+#if canImport(AppKit)
+import AppKit
+
+public typealias UXViewController = NSViewController
+
+#endif
