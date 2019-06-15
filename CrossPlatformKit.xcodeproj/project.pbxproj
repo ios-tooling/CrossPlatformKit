@@ -27,14 +27,14 @@
 		B568E0F722B48E780006F03A /* Bundle+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E622B48E6D0006F03A /* Bundle+iOS.swift */; };
 		B568E0F822B48E780006F03A /* UXImage+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E722B48E6D0006F03A /* UXImage+iOS.swift */; };
 		B568E0F922B48E780006F03A /* CGContext+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E822B48E6D0006F03A /* CGContext+iOS.swift */; };
-		B568E0FA22B48E780006F03A /* UXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E922B48E6D0006F03A /* UXViewController.swift */; };
+		B568E0FA22B48E780006F03A /* UXViewController+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0E922B48E6D0006F03A /* UXViewController+iOS.swift */; };
 		B568E0FB22B48E780006F03A /* UXView+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0EA22B48E6D0006F03A /* UXView+iOS.swift */; };
 		B568E0FC22B48E7E0006F03A /* Bundle+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0EC22B48E6D0006F03A /* Bundle+Mac.swift */; };
 		B568E0FD22B48E7E0006F03A /* UXColor+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0ED22B48E6D0006F03A /* UXColor+Mac.swift */; };
 		B568E0FE22B48E7E0006F03A /* UXRect+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0EE22B48E6D0006F03A /* UXRect+Mac.swift */; };
 		B568E0FF22B48E7E0006F03A /* UXFont+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0EF22B48E6D0006F03A /* UXFont+Mac.swift */; };
 		B568E10022B48E7E0006F03A /* UXView+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F022B48E6D0006F03A /* UXView+Mac.swift */; };
-		B568E10122B48E7E0006F03A /* UXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F122B48E6D0006F03A /* UXViewController.swift */; };
+		B568E10122B48E7E0006F03A /* UXViewController.swift+Mac in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F122B48E6D0006F03A /* UXViewController.swift+Mac */; };
 		B568E10222B48E7E0006F03A /* CGContext+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F222B48E6D0006F03A /* CGContext+Mac.swift */; };
 		B568E10322B48E7E0006F03A /* UXImage+Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568E0F322B48E6D0006F03A /* UXImage+Mac.swift */; };
 		B583A78A1CB4951C00AF73BA /* CrossPlatformKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B504E6461A8968DC001B414B /* CrossPlatformKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -75,14 +75,14 @@
 		B568E0E622B48E6D0006F03A /* Bundle+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+iOS.swift"; sourceTree = "<group>"; };
 		B568E0E722B48E6D0006F03A /* UXImage+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXImage+iOS.swift"; sourceTree = "<group>"; };
 		B568E0E822B48E6D0006F03A /* CGContext+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+iOS.swift"; sourceTree = "<group>"; };
-		B568E0E922B48E6D0006F03A /* UXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXViewController.swift; sourceTree = "<group>"; };
+		B568E0E922B48E6D0006F03A /* UXViewController+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXViewController+iOS.swift"; sourceTree = "<group>"; };
 		B568E0EA22B48E6D0006F03A /* UXView+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXView+iOS.swift"; sourceTree = "<group>"; };
 		B568E0EC22B48E6D0006F03A /* Bundle+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Mac.swift"; sourceTree = "<group>"; };
 		B568E0ED22B48E6D0006F03A /* UXColor+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXColor+Mac.swift"; sourceTree = "<group>"; };
 		B568E0EE22B48E6D0006F03A /* UXRect+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXRect+Mac.swift"; sourceTree = "<group>"; };
 		B568E0EF22B48E6D0006F03A /* UXFont+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXFont+Mac.swift"; sourceTree = "<group>"; };
 		B568E0F022B48E6D0006F03A /* UXView+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXView+Mac.swift"; sourceTree = "<group>"; };
-		B568E0F122B48E6D0006F03A /* UXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXViewController.swift; sourceTree = "<group>"; };
+		B568E0F122B48E6D0006F03A /* UXViewController.swift+Mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = "UXViewController.swift+Mac"; sourceTree = "<group>"; };
 		B568E0F222B48E6D0006F03A /* CGContext+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+Mac.swift"; sourceTree = "<group>"; };
 		B568E0F322B48E6D0006F03A /* UXImage+Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UXImage+Mac.swift"; sourceTree = "<group>"; };
 		B568E10422B48E890006F03A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 				B568E0E622B48E6D0006F03A /* Bundle+iOS.swift */,
 				B568E0E722B48E6D0006F03A /* UXImage+iOS.swift */,
 				B568E0E822B48E6D0006F03A /* CGContext+iOS.swift */,
-				B568E0E922B48E6D0006F03A /* UXViewController.swift */,
+				B568E0E922B48E6D0006F03A /* UXViewController+iOS.swift */,
 				B568E0EA22B48E6D0006F03A /* UXView+iOS.swift */,
 			);
 			path = iOS;
@@ -201,7 +201,7 @@
 				B568E0EE22B48E6D0006F03A /* UXRect+Mac.swift */,
 				B568E0EF22B48E6D0006F03A /* UXFont+Mac.swift */,
 				B568E0F022B48E6D0006F03A /* UXView+Mac.swift */,
-				B568E0F122B48E6D0006F03A /* UXViewController.swift */,
+				B568E0F122B48E6D0006F03A /* UXViewController.swift+Mac */,
 				B568E0F222B48E6D0006F03A /* CGContext+Mac.swift */,
 				B568E0F322B48E6D0006F03A /* UXImage+Mac.swift */,
 			);
@@ -434,7 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B568E0FA22B48E780006F03A /* UXViewController.swift in Sources */,
+				B568E0FA22B48E780006F03A /* UXViewController+iOS.swift in Sources */,
 				B568E0FB22B48E780006F03A /* UXView+iOS.swift in Sources */,
 				B568E0F822B48E780006F03A /* UXImage+iOS.swift in Sources */,
 				B568E0F622B48E780006F03A /* UXColor+iOS.swift in Sources */,
@@ -456,7 +456,7 @@
 				B568E0FC22B48E7E0006F03A /* Bundle+Mac.swift in Sources */,
 				B568E10222B48E7E0006F03A /* CGContext+Mac.swift in Sources */,
 				B568E0FF22B48E7E0006F03A /* UXFont+Mac.swift in Sources */,
-				B568E10122B48E7E0006F03A /* UXViewController.swift in Sources */,
+				B568E10122B48E7E0006F03A /* UXViewController.swift+Mac in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
