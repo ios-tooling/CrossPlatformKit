@@ -8,7 +8,6 @@
 
 #if canImport(AppKit)
 import AppKit
-
 import Cocoa
 
 public typealias UXImage = NSImage

@@ -6,10 +6,10 @@
 //  Copyright © 2017 Stand Alone, inc. All rights reserved.
 //
 
-import Cocoa
 
 #if canImport(AppKit)
 import AppKit
+import Cocoa
 
 public typealias UXView = NSView
 

@@ -6,8 +6,6 @@
 //  Copyright © 2017 Stand Alone, inc. All rights reserved.
 //
 
-import AppKit
-
 #if canImport(AppKit)
 import AppKit
 
