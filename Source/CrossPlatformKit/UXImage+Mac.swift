@@ -6,7 +6,7 @@
 //  Copyright © 2017 Stand Alone, inc. All rights reserved.
 //
 
-#if canImport(AppKit)
+#if os(OSX)
 import AppKit
 import Cocoa
 

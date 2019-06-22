@@ -7,7 +7,7 @@
 //
 
 
-#if canImport(AppKit)
+#if os(OSX)
 import AppKit
 import Cocoa
 
