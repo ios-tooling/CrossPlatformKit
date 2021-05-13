@@ -12,4 +12,8 @@ import Cocoa
 
 public typealias UXApplication = NSApplication
 
+public extension NSApplication {
+    static var app: NSApplication { NSApp }
+}
+
 #endif
