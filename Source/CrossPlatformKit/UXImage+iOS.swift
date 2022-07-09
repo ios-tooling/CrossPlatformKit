@@ -11,6 +11,17 @@ import UIKit
 
 public typealias UXImage = UIImage
 
+#if canImport(SwiftUI)
+import SwiftUI
+
+@available(iOS 13.0, *)
+extension Image {
+	public init(uxImage: UXImage) {
+		self.init(uiImage: uxImage)
+	}
+}
+#endif
+
 extension UIImage {
 	static public func create(size: CGSize, drawing: @escaping (CGContext) -> Void) -> UXImage? {
 		if #available(iOS 10, *) {

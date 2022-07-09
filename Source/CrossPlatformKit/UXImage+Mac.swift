@@ -12,6 +12,17 @@ import Cocoa
 
 public typealias UXImage = NSImage
 
+#if canImport(SwiftUI)
+import SwiftUI
+
+@available(macOS 10.15, *)
+extension Image {
+	public init(uxImage: UXImage) {
+		self.init(nsImage: uxImage)
+	}
+}
+#endif
+
 extension NSImage {
 	public convenience init(cgImage: CGImage) {
 		let size = CGSize(width: cgImage.width, height: cgImage.height)
