@@ -14,7 +14,7 @@ public typealias UXImage = UIImage
 #if canImport(SwiftUI)
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, watchOS 8.0, macOS 12.0, *)
 extension Image {
 	public init(uxImage: UXImage) {
 		self.init(uiImage: uxImage)
