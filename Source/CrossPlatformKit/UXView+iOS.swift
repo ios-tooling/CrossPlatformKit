@@ -7,7 +7,9 @@
 //
 
 #if canImport(UIKit)
+#if os(iOS)
 import UIKit
 
 public typealias UXView = UIView
+#endif
 #endif

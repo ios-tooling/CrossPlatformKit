@@ -9,6 +9,7 @@
 import Foundation
 
 #if canImport(UIKit)
+#if os(iOS)
 import UIKit
 
 extension Bundle {
@@ -16,5 +17,5 @@ extension Bundle {
 		return UIImage(named: name, in: self, compatibleWith: nil)
 	}
 }
-
+#endif
 #endif

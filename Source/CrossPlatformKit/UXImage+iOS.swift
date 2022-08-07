@@ -22,6 +22,8 @@ extension Image {
 }
 #endif
 
+#if os(iOS)
+
 extension UIImage {
 	static public func create(size: CGSize, drawing: @escaping (CGContext) -> Void) -> UXImage? {
 		if #available(iOS 10, *) {
@@ -53,4 +55,5 @@ extension UIImage {
 
 	
 }
+#endif
 #endif

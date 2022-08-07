@@ -6,6 +6,7 @@
 //
 
 #if canImport(UIKit)
+#if os(iOS)
 import UIKit
 
 public typealias UXApplication = UIApplication
@@ -13,5 +14,5 @@ public typealias UXApplication = UIApplication
 public extension UIApplication {
     static var app: UIApplication { shared }
 }
-
+#endif
 #endif

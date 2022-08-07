@@ -7,9 +7,10 @@
 //
 
 #if canImport(UIKit)
+#if os(iOS)
 import UIKit
 
 public typealias UXViewController = UIViewController
 
-
+#endif
 #endif
