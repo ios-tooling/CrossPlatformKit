@@ -9,6 +9,7 @@
 #if canImport(UIKit)
 #if os(iOS)
 import UIKit
+import SwiftUI
 
 public typealias UXView = UIView
 
@@ -22,6 +23,23 @@ public extension UIView {
 		return image
 	}
 }
+
+public protocol UXViewRepresentable: UIViewRepresentable {
+	associatedtype UXViewType: UIView
+	func makeUXView(context: Context) -> UXViewType
+	func updateUXView(_ uiView: UXViewType, context: Context)
+}
+
+public extension UXViewRepresentable {
+	func makeUIView(context: Context) -> UXViewType {
+		makeUXView(context: context)
+	}
+	
+	func updateUIView(_ uiView: UXViewType, context: Context) {
+		updateUXView(uiView, context: context)
+	}
+}
+
 
 #endif
 #endif

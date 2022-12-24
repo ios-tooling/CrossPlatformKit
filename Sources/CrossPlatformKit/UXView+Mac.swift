@@ -10,6 +10,7 @@
 #if os(OSX)
 import AppKit
 import Cocoa
+import SwiftUI
 
 public typealias UXView = NSView
 
@@ -25,5 +26,22 @@ public extension NSView {
 		return NSImage(cgImage: image, size: bounds.size)
 	}
 }
+
+public protocol UXViewRepresentable: NSViewRepresentable {
+	associatedtype UXViewType: NSView
+	func makeUXView(context: Context) -> UXViewType
+	func updateUXView(_ nsView: UXViewType, context: Context)
+}
+
+public extension UXViewRepresentable {
+	func makeNSView(context: Context) -> UXViewType {
+		makeUXView(context: context)
+	}
+	
+	func updateNSView(_ nsView: UXViewType, context: Context) {
+		updateUXView(nsView, context: context)
+	}
+}
+
 
 #endif
