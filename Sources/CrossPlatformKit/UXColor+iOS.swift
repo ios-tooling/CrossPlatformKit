@@ -8,7 +8,18 @@
 
 #if canImport(UIKit)
 import UIKit
+#if canImport(SwiftUI)
+	import SwiftUI
+#endif
 
 public typealias UXColor = UIColor
+
+
+@available(iOS 13.0, *)
+public extension Color {
+	init(uxColor: UXColor) {
+		self.init(uxColor)
+	}
+}
 
 #endif
