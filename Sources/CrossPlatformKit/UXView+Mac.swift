@@ -20,10 +20,15 @@ public extension NSView {
 	}
 
 	func extractImage() -> NSImage? {
+//		let data = dataWithPDF(inside: bounds)
+//		return NSImage(data: data)
+
 		let imageRepresentation = bitmapImageRepForCachingDisplay(in: bounds)!
 		cacheDisplay(in: bounds, to: imageRepresentation)
-		guard let image = imageRepresentation.cgImage else { return nil }
-		return NSImage(cgImage: image, size: bounds.size)
+		let image = imageRepresentation
+		let result = NSImage(size: CGSize(width: bounds.width, height: bounds.height))
+		result.addRepresentation(image)
+		return result
 	}
 }
 
