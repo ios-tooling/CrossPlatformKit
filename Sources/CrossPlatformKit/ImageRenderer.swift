@@ -13,7 +13,7 @@ extension ImageRenderer {
 		@MainActor public var uxImage: NSImage? { nsImage }
 	#endif
 		
-	#if os(iOS)
+	#if os(iOS) || os(visionOS)
 		@MainActor public var uxImage: UIImage? { uiImage }
 	#endif
 		

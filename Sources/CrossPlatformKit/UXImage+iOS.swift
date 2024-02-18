@@ -22,7 +22,7 @@ extension Image {
 }
 #endif
 
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 
 extension UIImage {
 	static public func create(size: CGSize, drawing: @escaping (CGContext) -> Void) -> UXImage? {
