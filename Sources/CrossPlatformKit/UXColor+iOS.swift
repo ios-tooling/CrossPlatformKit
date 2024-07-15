@@ -22,4 +22,9 @@ public extension Color {
 	}
 }
 
+@available(iOS 13.0, *)
+public extension UXColor {
+	var color: Color { Color(uxColor: self) }
+}
+
 #endif
