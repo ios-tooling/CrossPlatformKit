@@ -9,7 +9,7 @@
 import Foundation
 
 #if canImport(UIKit)
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 import UIKit
 
 extension Bundle {

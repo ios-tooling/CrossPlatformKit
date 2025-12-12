@@ -22,7 +22,7 @@ extension Image {
 }
 #endif
 
-#if os(iOS)
+#if os(iOS) || os(visionOS)
 
 extension UIImage {
 	public convenience init?(data: Data?) {
