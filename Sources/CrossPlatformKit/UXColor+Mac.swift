@@ -31,4 +31,9 @@ public extension Color {
 	}
 }
 
+@available(macOS 12.0, *)
+public extension UXColor {
+	var color: Color { Color(uxColor: self) }
+}
+
 #endif
