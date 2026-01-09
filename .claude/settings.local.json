@@ -6,7 +6,11 @@
       "Bash(afplay:*)",
       "Bash(find:*)",
       "Bash(done)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(swift:*)",
+      "Bash(xcodebuild:*)",
+      "Bash(sudo xcode-select:*)",
+      "Bash(xcrun:*)"
     ]
   }
 }
