@@ -3,7 +3,10 @@
     "allow": [
       "Bash(swift test:*)",
       "Bash(swift build:*)",
-      "Bash(afplay:*)"
+      "Bash(afplay:*)",
+      "Bash(find:*)",
+      "Bash(done)",
+      "Bash(grep:*)"
     ]
   }
 }

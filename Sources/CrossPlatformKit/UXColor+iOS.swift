@@ -18,14 +18,12 @@ public extension UIColor {
 	static var defaultBackground: UIColor { .systemBackground }
 }
 
-@available(iOS 13.0, *)
 public extension Color {
 	init(uxColor: UXColor) {
 		self.init(uxColor)
 	}
 }
 
-@available(iOS 13.0, *)
 public extension UXColor {
 	var color: Color { Color(uxColor: self) }
 }

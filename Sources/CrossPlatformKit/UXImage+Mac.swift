@@ -14,14 +14,12 @@ public typealias UXImage = NSImage
 #if canImport(SwiftUI)
 import SwiftUI
 
-@available(macOS 10.15, *)
 extension Image {
 	public init(uxImage: UXImage) {
 		self.init(nsImage: uxImage)
 	}
 }
 
-@available(macOS 10.15, *)
 public extension NSImage {
 	var image: Image {
 		Image(nsImage: self)
