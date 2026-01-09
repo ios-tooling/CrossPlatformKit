@@ -20,6 +20,13 @@ extension Image {
 		self.init(uiImage: uxImage)
 	}
 }
+
+@available(iOS 13.0, watchOS 8.0, *)
+public extension UIImage {
+	var image: Image {
+		Image(uiImage: self)
+	}
+}
 #endif
 
 #if os(iOS) || os(visionOS)

@@ -14,6 +14,9 @@ import UIKit
 
 public typealias UXColor = UIColor
 
+public extension UIColor {
+	static var defaultBackground: UIColor { .systemBackground }
+}
 
 @available(iOS 13.0, *)
 public extension Color {

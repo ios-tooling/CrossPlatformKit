@@ -20,6 +20,13 @@ extension Image {
 		self.init(nsImage: uxImage)
 	}
 }
+
+@available(macOS 10.15, *)
+public extension NSImage {
+	var image: Image {
+		Image(nsImage: self)
+	}
+}
 #endif
 
 extension NSImage {
@@ -30,8 +37,8 @@ extension NSImage {
 	}
 	
 	public convenience init?(url: URL?) {
-		guard let url else { return nil }
-		
+		guard let url, url.isFileURL else { return nil }
+
 		self.init(contentsOf: url)
 	}
 	
