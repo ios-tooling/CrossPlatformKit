@@ -5,7 +5,8 @@
 //  Created by Ben Gottlieb on 7/22/23.
 //
 
-#if os(iOS)
+#if canImport(UIKit)
+#if os(iOS) || os(visionOS)
 import UIKit
 
 public typealias UXTextField = UITextField
@@ -16,4 +17,5 @@ extension UXTextField {
 		selectedTextRange = textRange(from: beginningOfDocument, to: endOfDocument)
 	}
 }
+#endif
 #endif

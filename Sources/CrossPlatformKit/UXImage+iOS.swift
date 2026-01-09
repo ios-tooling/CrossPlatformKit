@@ -37,27 +37,14 @@ extension UIImage {
 		self.init(contentsOfFile: url.path)
 	}
 
-	static public func create(size: CGSize, drawing: @escaping (CGContext) -> Void) -> UXImage? {
-		if #available(iOS 10, *) {
-			return UIGraphicsImageRenderer(size: size).image { renderer in
-				guard let ctx = UIGraphicsGetCurrentContext() else {
-					print("⚠️ UIGraphicsGetCurrentContext() Failed")
-					return
-				}
-				
-				drawing(ctx)
-			}
-		} else {
-			UIGraphicsBeginImageContextWithOptions(size, false, 0)
+	static public func create(size: CGSize, drawing: (CGContext) -> Void) -> UXImage? {
+		return UIGraphicsImageRenderer(size: size).image { renderer in
 			guard let ctx = UIGraphicsGetCurrentContext() else {
 				print("⚠️ UIGraphicsGetCurrentContext() Failed")
-				return nil
+				return
 			}
-			
+
 			drawing(ctx)
-			let image = UIGraphicsGetImageFromCurrentImageContext()
-			UIGraphicsEndImageContext()
-			return image
 		}
 	}
 	

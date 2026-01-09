@@ -6,9 +6,8 @@
 //  Created by Ben Gottlieb on 6/19/20.
 //
 
-#if os(OSX)
+#if canImport(AppKit)
 import AppKit
-import Cocoa
 
 public typealias UXApplication = NSApplication
 

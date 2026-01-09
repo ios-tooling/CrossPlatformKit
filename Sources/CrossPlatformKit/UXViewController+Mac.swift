@@ -7,9 +7,8 @@
 //
 
 
-#if os(OSX)
+#if canImport(AppKit)
 import AppKit
-import Cocoa
 import SwiftUI
 
 public typealias UXViewController = NSViewController

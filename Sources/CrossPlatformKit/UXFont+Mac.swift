@@ -6,9 +6,7 @@
 //  Copyright © 2017 Stand Alone, inc. All rights reserved.
 //
 
-import Foundation
-
-#if os(OSX)
+#if canImport(AppKit)
 import AppKit
 
 public typealias UXFont = NSFont

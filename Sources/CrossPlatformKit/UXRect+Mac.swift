@@ -7,9 +7,8 @@
 //
 
 
-#if os(OSX)
+#if canImport(AppKit)
 import AppKit
-import Cocoa
 
 public typealias UXRect = NSRect
 #endif
