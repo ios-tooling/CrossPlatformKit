@@ -9,7 +9,6 @@
 
 #if canImport(AppKit)
 import AppKit
-import Foundation
 
 public typealias UXRect = NSRect
 

@@ -9,15 +9,9 @@ import SwiftUI
 
 @available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
 extension ImageRenderer {
-	#if os(macOS)
+	#if canImport(AppKit)
 		@MainActor public var uxImage: NSImage? { nsImage }
-	#endif
-		
-	#if os(iOS) || os(visionOS)
-		@MainActor public var uxImage: UIImage? { uiImage }
-	#endif
-		
-	#if os(watchOS)
+	#elseif canImport(UIKit)
 		@MainActor public var uxImage: UIImage? { uiImage }
 	#endif
 }

@@ -29,7 +29,7 @@ public extension UIImage {
 }
 #endif
 
-#if os(iOS) || os(visionOS)
+#if os(iOS) || os(visionOS) || os(watchOS)
 
 extension UIImage {
 	public convenience init?(data: Data?) {

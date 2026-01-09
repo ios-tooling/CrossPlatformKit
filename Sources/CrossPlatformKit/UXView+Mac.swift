@@ -22,7 +22,7 @@ public extension NSView {
 //		let data = dataWithPDF(inside: bounds)
 //		return NSImage(data: data)
 
-		let imageRepresentation = bitmapImageRepForCachingDisplay(in: bounds)!
+		guard let imageRepresentation = bitmapImageRepForCachingDisplay(in: bounds) else { return nil }
 		cacheDisplay(in: bounds, to: imageRepresentation)
 		let image = imageRepresentation
 		let result = NSImage(size: CGSize(width: bounds.width, height: bounds.height))

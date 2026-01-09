@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-#if os(iOS) || os(visionOS)
+#if os(iOS) || os(visionOS) || os(watchOS)
 import UIKit
 
 public typealias UXTextField = UITextField
