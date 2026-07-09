@@ -10,26 +10,6 @@
 
 import SwiftUI
 
-// MARK: - Navigation bar title display mode
-
-public enum UXTitleDisplayMode: Sendable { case automatic, inline, large }
-
-public extension View {
-	/// Cross-platform `navigationBarTitleDisplayMode`; a no-op on macOS.
-	@available(iOS 14, *)
-	@ViewBuilder func uxNavigationBarTitleDisplayMode(_ mode: UXTitleDisplayMode) -> some View {
-		#if os(iOS)
-		switch mode {
-		case .automatic: navigationBarTitleDisplayMode(.automatic)
-		case .inline: navigationBarTitleDisplayMode(.inline)
-		case .large: navigationBarTitleDisplayMode(.large)
-		}
-		#else
-		self
-		#endif
-	}
-}
-
 // MARK: - Toolbar item placements
 
 #if os(iOS)
