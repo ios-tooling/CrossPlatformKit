@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-@available(iOS 14.0, *)
+#if os(macOS)
 public extension ListStyle where Self == InsetListStyle {
-	static var insetGroup: InsetListStyle { Self() }
+	static var insetGrouped: InsetListStyle { InsetListStyle.inset }
 }
+#endif
