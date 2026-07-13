@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 public extension ListStyle where Self == InsetListStyle {
 	static var insetGroup: InsetListStyle { Self() }
 }
