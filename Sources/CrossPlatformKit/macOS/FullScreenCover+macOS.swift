@@ -7,14 +7,16 @@
 
 import SwiftUI
 
+#if os(macOS)
 public extension View {
 	@ViewBuilder func fullScreenCover<Content: View>(isPresented: Binding<Bool>, content: @escaping () -> Content) -> some View {
-		
+
 		self.sheet(isPresented: isPresented, content: content)
 	}
-	
+
 	@ViewBuilder func fullScreenCover<Content: View, Item: Identifiable>(item: Binding<Item?>, content: @escaping (Item) -> Content) -> some View {
-		
+
 		self.sheet(item: item, content: content)
 	}
 }
+#endif
